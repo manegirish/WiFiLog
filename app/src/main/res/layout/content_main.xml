@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/content_main_interval"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="5"
+            android:imeOptions="actionDone"
+            android:ems="2"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/content_main_set"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="SET INTERVAL"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:onClick="onClick"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/content_main_start"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@color/green"
+        android:text="START"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:onClick="onClick"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/content_main_stop"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@color/red"
+        android:onClick="onClick"
+        android:text="STOP"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/content_main_export"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:background="@color/export"
+        android:text="EXPORT"
+        android:onClick="onClick"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
